@@ -1,0 +1,29 @@
+h1{
+
+text-align: center;
+color: black;
+
+}
+
+p{color: black;}
+
+div{
+  text-align: center;
+  border-color: black;
+}
+
+body{
+  background-color: lightgrey;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+select{
+  align-content: center;
+}
+
+img{
+  align-items: center;
+}
