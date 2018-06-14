@@ -50,11 +50,9 @@ const populateBeerData = function(beers){
   const select = document.querySelector("#beer-select");
   const div = document.querySelector("#beer-data")
   div.innerHTML = "";
-  const p = document.createElement("p");
-  const p2 = document.createElement("p");
+  const p = document.createElement("h1");
+  const p2 = document.createElement("h2");
   const p3 = document.createElement("p");
-  const p4 = document.createElement('p');
-  const p5 = document.createElement('p');
 
   const a1 = document.createElement('img');
 
@@ -68,13 +66,14 @@ const populateBeerData = function(beers){
   })
 
   p.textContent = result.name;
-  p2.textContent = `The description of ${result.name}  is ${result.description}`;
-  p3.textContent = `The tagline of ${result.name} is ${result.tagline}`;
+  p2.textContent = result.tagline;
+  p3.textContent = result.description;
   // p4.textContent = `Countries that border ${result.name} are ${result.borders}`;
   // p5.textContent = "DRAPEAU SANS FRONTIERS"
   a1.src = result.image_url;
   a1.width = 500;
-  a1.height = 1000;
+
+
 
 
   div.appendChild(p);
